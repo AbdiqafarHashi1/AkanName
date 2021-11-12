@@ -1,9 +1,22 @@
 body{
-    background-image: url(C);
+    background-image: url(backgroundimage.jpeg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1{
     text-align: center;
+    color: aliceblue;
+}
+p{
+    width: 50%;
+    color: blanchedalmond;
+    font-size: 17px;
+    font-family: sans-serif;
+    line-height: 1.5em;
+    margin-top: 50px;
 }
 
 #img{
@@ -12,4 +25,8 @@ h1{
     height: 200px;
     border-radius: 50%;
     margin: auto;
+}
+
+#img2{
+    
 }
