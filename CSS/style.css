@@ -10,13 +10,15 @@ h1{
     text-align: center;
     color: aliceblue;
 }
-p{
+#p1{
     width: 50%;
     color: blanchedalmond;
     font-size: 17px;
     font-family: sans-serif;
     line-height: 1.5em;
     margin-top: 50px;
+    text-align: center;
+    margin: auto;
 }
 
 #img{
@@ -30,5 +32,23 @@ p{
 #img2{
     width: 500px;
     height: 500px;
+    margin-top: 100px;
 }
 
+.form{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 2.5em;
+}
+
+
+input[type=number] {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
