@@ -86,3 +86,8 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
 }
+
+.response{
+    border: 1px solid grey;
+   
+}
