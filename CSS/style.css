@@ -89,5 +89,8 @@ input[type=submit] {
 
 .response{
     border: 1px solid grey;
-   
+    border-radius: 10px;
+    text-align: center;
+    color: #EF7B45;
+    font-size: 20px;
 }
