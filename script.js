@@ -1,9 +1,9 @@
 let form = document.getElementById("formSubmit").addEventListener("click",function(e){
 	e.preventDefault()
 })
-
+  
   	//Get input from HTML
-      function akanGenerator(){
+	function akanGenerator(){
 		var dd = document.getElementById("day").value;
 		var mm = document.getElementById("month").value;
 		var yy = document.getElementById("year").value;
@@ -20,7 +20,7 @@ let form = document.getElementById("formSubmit").addEventListener("click",functi
 		var males = ["Kwasi", "Kwadwo", "Kwabena","Kwaku", "Yaw", "Kofi", "Kwame"];
 		var females = ["Akosua","Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
-        		//Calculation of Day of the Week
+		//Calculation of Day of the Week
 		var birthday = new Date(mm + '/' + dd + '/' + yy);
 		var dayOfTheWeek = birthday.getDay();
 		
@@ -68,11 +68,9 @@ let form = document.getElementById("formSubmit").addEventListener("click",functi
 		else{
 			document.getElementById("output").innerText = "Please select Gender "
 		}
-
-    }
+	}
 
 //Reset form
 function reset(){
 	document.getElementById("form").reset();
 }
-

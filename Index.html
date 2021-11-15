@@ -17,37 +17,50 @@
 
     <img id="img2" src="CSS/AkaNameimg.jpg" alt="">
 
-    <div class="form">
-        <form>
-            <p id="output"></p>
-            <legend>Fill in to generate your Akan name:
-                <hr>
-            </legend>
-            <label for="year ">Year of birth</label><br>
-            <input type="number" id="year" name="year" min="1900" max="2020" required placeholder="Example: 1989"><br>
-
-            <label for="month ">Month</label><br>
-            <input type="number" id="month" name="month" min="1" max="12" required placeholder="Example: December=12, May=5"><br>
-
-            <label for="date ">Date</label><br>
-            <input type="number" id="day" name="date" min="1" max="31" required placeholder="Example: 21 "><br>
-
-            <p>Select your gender: <br></p>
-            <div class="radio">
-                <label>
-                  <input type="radio" name="gender" value="Female" id="female" checked>
-                  Female
-                </label>
-                <label>
-                  <input type="radio" name="gender" value="Male" id="male">
-                  Male
-            </label>
-        </div>
-            
-
-            <input type="submit" value="Submit" id="formSubmit">
-        </form>
-    </div>
-<script src="script.js"></script>
+	<div class="container">
+		<form>
+			<p class = "response" id="output">Your Akan Name will appear here...</p> 
+			<div class="mb-3">
+				<input type="number" class="form-control" id="day" placeholder="Day" required>
+			</div>
+			<div>
+				<select required class="form-select" aria-label="Default select example" id="month">
+				<option selected disabled value="">Month</option>
+				<option value="1">January</option>
+				<option value="2">February</option>
+				<option value="3">March</option>
+				<option value="4">April</option>
+				<option value="5">May</option>
+				<option value="6">June</option>
+				<option value="7">July</option>
+				<option value="8">August</option>
+				<option value="9">September</option>
+				<option value="10">October</option>
+				<option value="11">November</option>
+				<option value="12">December</option>
+				</select>
+			</div>
+		  <div class="mb-3">
+		  	<input type="number" class="form-control" id="year" placeholder="Year" required>
+		  </div>
+		  <div class="mb-3">
+		    <div class="form-check">
+				<input class="form-check-input" type="radio" name="gender" id="male" value="male" required id="flexCheckDefault">
+				<label class="form-check-label" for="flexCheckDefault">Male</label>
+			</div>
+		  </div>
+		  <div class="mb-3">
+		    <div class="form-check">
+				<input class="form-check-input" type="radio" name="gender" id="female" value="female" required id="flexCheckDefault">
+				<label class="form-check-label" for="flexCheckDefault">Female</label>
+			</div>
+		  </div>
+		  <div class="d-grid gap-2">
+			  <input type="submit" onclick="akanGenerator()" value="Submit" id="formSubmit">
+			  <button class="btn" type="button" onclick="reset()" value="reset" >Reset</button>
+		  </div>
+		</form>
+	</div>
+	<script src="script.js" type="text/javascript" charset="utf-8" defer></script>
 </body>
 </html>
